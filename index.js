@@ -11,7 +11,7 @@ const app=express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 const corsOptions = {
-  origin: 'http://localhost:5173', // Replace with your frontend's origin
+  origin: 'https://tiny-alfajores-ef0da1.netlify.app', // Replace with your frontend's origin
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true, // Enable cookies and other credentials to be included in the CORS request
   optionsSuccessStatus: 204, // Some legacy browsers (IE11, various SmartTVs) choke on 204
