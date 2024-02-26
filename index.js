@@ -2,7 +2,7 @@ const express=require('express')
 const cors=require('cors')
 const signup=require('./signup/signup')
 const login=require('./signup/login')
-const addtodatabase=require('./posttodatabase');
+
 const bodyParser=require('body-parser')
 const cardsdata=require('./signup/questions/cardsdata/cardsdata')
 const mostasked=require('./signup/questions/cardsdata/mostaskedquestions');
@@ -22,7 +22,7 @@ app.use(signup);
 app.use(login)
 app.use(cardsdata)
 app.use(mostasked)
-app.use(addtodatabase)
+
 app.use(problemlist)
 const port=process.env.PORT||3000;
 app.listen(port,()=>{
